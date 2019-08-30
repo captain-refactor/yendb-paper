@@ -22,19 +22,9 @@ export interface NonArraySchemaObject extends BaseSchemaObject {
 export interface BaseSchemaObject {
     title?: string;
     description?: string;
-    format?: string;
     default?: any;
     multipleOf?: number;
-    maximum?: number;
-    exclusiveMaximum?: boolean;
-    minimum?: number;
-    exclusiveMinimum?: boolean;
-    maxLength?: number;
-    minLength?: number;
-    pattern?: string;
     additionalProperties?: boolean | SchemaObject;
-    maxItems?: number;
-    minItems?: number;
     uniqueItems?: boolean;
     maxProperties?: number;
     minProperties?: number;
@@ -49,9 +39,6 @@ export interface BaseSchemaObject {
     not?: SchemaObject;
     nullable?: boolean;
     discriminator?: DiscriminatorObject;
-    readOnly?: boolean;
-    writeOnly?: boolean;
-    example?: any;
     deprecated?: boolean;
 }
 
